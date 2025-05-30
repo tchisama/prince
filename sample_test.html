@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Test Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .content {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1;
+            margin: 0 10px;
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #e9ecef;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 14px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🧪 API Testing Sample Document</h1>
+        <p>This is a sample HTML document for testing the HTML to PDF conversion API</p>
+    </div>
+
+    <div class="content">
+        <h2>📊 Test Results Overview</h2>
+        <p>This document demonstrates various HTML elements and styling that should be properly converted to PDF format using Prince XML.</p>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-number">7</div>
+                <div>Total Tests</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">95%</div>
+                <div>Success Rate</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">250ms</div>
+                <div>Avg Response</div>
+            </div>
+        </div>
+
+        <h3>🎯 Test Scenarios</h3>
+        <ul>
+            <li><strong>Health Check:</strong> Verify API availability</li>
+            <li><strong>Valid HTML (JSON):</strong> Test conversion with JSON payload</li>
+            <li><strong>Valid HTML (Raw):</strong> Test conversion with raw HTML body</li>
+            <li><strong>Invalid HTML:</strong> Test error handling</li>
+            <li><strong>Empty Body:</strong> Test validation</li>
+            <li><strong>Large HTML:</strong> Test performance with large documents</li>
+        </ul>
+
+        <h3>📈 Performance Metrics</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Endpoint</th>
+                    <th>Method</th>
+                    <th>Avg Response Time</th>
+                    <th>Success Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>/health</td>
+                    <td>GET</td>
+                    <td>45ms</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>GET</td>
+                    <td>38ms</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>/convert</td>
+                    <td>POST</td>
+                    <td>320ms</td>
+                    <td>85%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>🔍 Error Analysis</h3>
+        <p>Common errors encountered during testing:</p>
+        <ol>
+            <li><strong>Invalid HTML Structure:</strong> Missing DOCTYPE or HTML tags</li>
+            <li><strong>Empty Request Body:</strong> No content provided</li>
+            <li><strong>Prince XML Timeout:</strong> Large documents exceeding processing time</li>
+            <li><strong>Network Errors:</strong> Connection issues or server unavailability</li>
+        </ol>
+
+        <h3>💡 Recommendations</h3>
+        <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 15px; border-radius: 5px;">
+            <strong>⚠️ Important:</strong> Always validate HTML structure before sending to the API. 
+            Ensure proper DOCTYPE declaration and well-formed HTML elements for best results.
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Generated by API Testing Tool | Prince XML HTML to PDF Converter</p>
+        <p>Test executed on: <span id="timestamp">2024-01-15 14:30:25</span></p>
+    </div>
+</body>
+</html>
