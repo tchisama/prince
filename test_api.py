@@ -562,12 +562,7 @@ class APITester:
             print(f"     Requests: {stats['total_requests']}")
             print(f"     Success Rate: {stats['success_rate']}%")
             print(f"     Avg Response Time: {stats['avg_response_time']}ms")
-
-        # Error Analysis
-        if analytics['error_analysis']:
-            print(f"\n🚨 ERROR ANALYSIS:")
-            for error, count in analytics['error_analysis'].items():
-                print(f"   {error}: {count} occurrences")
+        
 
         # File Size Analysis
         file_analysis = analytics['file_size_analysis']
